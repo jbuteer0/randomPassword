@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rondom passwordGenerator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href ="script.js">
+
+</head>
+<body>
+    
+
+        <nav class="navbar navbar-dark bg-dark">
+                <span class="navbar-brand mb-0 h1"> Random password Generator</span>
+              </nav>
+
+
+              <div class="container">
+
+                    <div class="row">
+
+
+                            <div class="col-lg-8-sm-12 mx-auto">
+
+
+
+                        <div class="content">
+                            <h4>
+                                Rondom passwordGenerator
+                            </h4>
+
+                            <br />
+
+                            <input type="text" id ="display">
+                            <br/>
+                            <inpute type="range " min="50" max="100" name="slider" id ="slider">
+                                <br/>
+
+                                <button onclick ="generate()">Generate</button>
+
+                                <button onclick=" copypassword()">Copy to clip board</button>
+
+                                <div id="lenght "></div>
+
+                        </div>
+
+                        <div class="previous-password">
+                            <b>Copy to clip board if you want your password to be saved for future and easy log in.</b>
+                            <br>
+                            <div id="lastNum"></div>
+                        </div>
+                            
+
+                    </div>
+              </div>
+
+
+
+
+              <script>
+                  var userpassword = confirm("Do you want your password to be containing the upper case letters.");
+                 var upppercase = confirm ("Do you want your password to have lower case letters ");
+                 var mix = confirm ("Do you want your password to have special characters?");
+                 // user will enter the password in the following line.
+
+                  
+
+
+                 function rand(len,not){
+                     if (len=== underfined)len = 13;
+                     if (typeof not !=='string ') not ='';
+                     if (len==='rand') len = Math.floor(Math.random ()*(30-19)+19);
+                     if (typeof len ==='string ') len = parseInt(len,10);
+                     if (len <13 ||nisNaN(len))  len = 13;
+                     
+                     var s = '!@#$%%^&*()_+',
+                        n= '0123456789',
+                        u = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+                        L = 'abcdefghijklmnopqrstuvwxyz',
+                        a = 'jnefne9f032803[e3ijef   30939ujS uJ eue98e4urHJIHJHi8hlor8y9gjorgn-r0n3r3-r47er8re';
+                        out = '';
+
+                        if ( (nl = not.length )>0){
+                           // var regex = ';
+                           // regex = not'
+                        }
+                 }
+              
+              
+              </script>
+  
+</body>
+</html>
